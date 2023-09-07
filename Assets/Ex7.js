@@ -32,3 +32,19 @@ if (b >= 18) {
 }
 
 /* Script Calculatrice */
+
+var nombre1 = window.prompt("Saisissez un nombre");
+var nombre2 = window.prompt("Saisissez un deuxième nombre");
+var operateur = window.prompt("Choisissez un opérateur");
+
+if (operateur != "+","-","*","/"){
+
+    alert("Erreur opérateur éronné");
+
+}else 
+
+{
+    
+    alert( nombre1 + operateur +nombre2);
+
+}
