@@ -36,15 +36,30 @@ if (b >= 18) {
 var nombre1 = window.prompt("Saisissez un nombre");
 var nombre2 = window.prompt("Saisissez un deuxième nombre");
 var operateur = window.prompt("Choisissez un opérateur");
+var resultat;
 
-if (operateur != "+","-","*","/"){
-
-    alert("Erreur opérateur éronné");
-
-}else 
-
+switch (operateur)
 {
+    case "+" :
+        resultat = +nombre1 + +nombre2;
+        alert(resultat);
+        break;
     
-    alert( nombre1 + operateur +nombre2);
+    case "-" :
+        resultat = nombre1 - nombre2;
+        alert(resultat);
+        break;
 
+    case "*" :
+        resultat = nombre1 * nombre2;
+        alert(resultat);
+        break;
+
+    case "/" :
+        resultat = nombre1 / nombre2;
+        alert(resultat);
+        break;
+
+    default : 
+    alert("Erreur Opérateur éronné");
 }
